@@ -1,5 +1,5 @@
 # Parent Class
-class vehicle: 
+class Vehicle(): 
 
     wheels = 4 # class level attribute assigned to all objects from the class
     all_vehicles = []
@@ -9,14 +9,14 @@ class vehicle:
         self.model = model 
         self.year = year
 
-        vehicle.all_vehicles.append(self)
+        Vehicle.all_vehicles.append(self)
 
-        # instance method that we can perform on the object
-        def __str__(self):
-            #return a string representing the vehicle object
-            return f"vehicle: {self.make}, Model {self.model}, Year: {self.year}"
+    # instance method that we can perform on the object
+    def __str__(self):
+        #return a string representing the vehicle object
+        return f"vehicle: {self.make}, Model {self.model}, Year: {self.year}"
 
-        @classmethod
-        def get_all_vehicles(cls):
-            return cls.all_vehicles
+    @classmethod
+    def get_all_vehicles(cls):
+        return cls.all_vehicles
 
