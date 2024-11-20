@@ -21,3 +21,11 @@
     - does not have access to class or instance attributes but perfroms actions within the class
 - magic method
     - reserved methods that perform a specific task `__str__`
+
+    ## Inheritance
+    -inheritance allows us to define a class that inherits all the methods and properties from another class
+    - Parent Class (student)
+    - Child Class (Graduate Student)
+
+    ## Polymorphism
+    - methods/functions/operators with the same name that can be executed on many objects or classes
